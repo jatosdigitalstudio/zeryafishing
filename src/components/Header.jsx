@@ -9,6 +9,8 @@ import {
   IconButton,
 } from "@material-tailwind/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import { FaPhoneAlt } from "react-icons/fa";
+
 import Image from 'next/image'
 function NavItem({ label, link}) {
   return (
@@ -23,10 +25,10 @@ function NavItem({ label, link}) {
 function NavList() {
   return (
     <ul className="mb-4 mt-2 flex flex-col gap-3 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-5">
-      <NavItem label="Beranda" link={'#Home'} />
-      <NavItem label="Tentang Kami" link={'#About'} />
-      <NavItem label="Blogs" link={'#Blogs'} />
-      <NavItem label="Contact" link={'#Contact'} />
+      <NavItem label="Beranda" link={'#Beranda'} />
+      <NavItem label="Tentang Kami" link={'#Tentang-kami'} />
+      <NavItem label="Artikel" link={'#Artikel'} />
+      <NavItem label="Kontak" link={'#kontak'} />
     </ul>
   );
 }
@@ -57,8 +59,9 @@ export default function Header() {
         <div className="hidden lg:block">
           <NavList />
         </div>
-        <Button color="gray" className="hidden lg:inline-block">
-          Shop Now
+        <Button color="gray" className="hidden text-sm lg:flex lg:flex-row">
+          <FaPhoneAlt className="text-[18px] mr-2"/>
+          0811 2112 4404
         </Button>
         <IconButton
           size="sm"
@@ -78,7 +81,7 @@ export default function Header() {
         <div className="mt-2 rounded-xl bg-white py-2">
           <NavList />
           <Button className="mb-2" fullWidth>
-            Shop Now
+            0811 2112 4404
           </Button>
         </div>
       </Collapse>

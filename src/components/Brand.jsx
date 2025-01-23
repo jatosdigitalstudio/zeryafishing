@@ -1,9 +1,10 @@
 'use client'
 import { Button, Card, CardBody, Typography } from "@material-tailwind/react";
-
+import Image from "next/image";
+import { BRAND_LOGO } from "@/libs/data";
 export default function Brand() {
   return (
-    <section className="py-8 px-8 lg:py-20">
+    <section id="brand" className="py-8 px-8 lg:py-20">
       <div className="container !mx-auto text-center place-content-center grid">
         <Typography
           color="blue-gray"
@@ -21,76 +22,32 @@ export default function Brand() {
         </Typography>
        
         <div className="flex flex-col md:flex-row gap-6 max-w-6xl mx-auto">
-          <div className="flex flex-col items-center justify-center gap-6">
-            <Card shadow={false} className="bg-[#FAFAFA] px-10">
-              <CardBody>
-                <img
-                  src="https://www.material-tailwind.com/logos/logo-coinbase.svg"
+          <div className="grid grid-cols-5 gap-6">
+            {
+              BRAND_LOGO.map((data) => (
+                <Image
+                  key={data}
+                  src={data.image}
                   alt="logo"
-                  className="w-40"
+                  width={300}
+                  height={100}
                 />
-                <Typography variant="small" className="font-normal text-gray-500">
-                  coinbase.com
-                </Typography>
-              </CardBody>
-            </Card>
-            <Card shadow={false} className="bg-[#FAFAFA] px-10">
-              <CardBody>
-                <img
-                  src="https://www.material-tailwind.com/logos/logo-amazon.svg"
-                  alt="logo"
-                  className="w-40"
-                />
-                <Typography variant="small" className="font-normal text-gray-500">
-                  amazon.com
-                </Typography>
-              </CardBody>
-            </Card>
-          </div>
-          <Card shadow={false} className="bg-[#FAFAFA] lg:px-10 justify-center max-w-[18rem] lg:max-w-lg">
-            <CardBody className="text-center">
-              <img
-                src="https://www.material-tailwind.com/logos/logo-netflix.svg"
-                alt="logo"
-                className="w-40 mx-auto"
-              />
-              <Typography variant="small" className="font-normal text-gray-500 mb-4">
-              netflix.com
-              </Typography>
-              <Typography variant="small" color="blue-gray" className="font-normal lg:max-w-[16rem]">
-              &quot;It have broadened our horizons and helped me advance my career. The community is incredibly supportive.&quot;
-              </Typography>
-            </CardBody>
-          </Card>
-          <div className="flex flex-col items-center justify-center gap-6">
-          <Card shadow={false} className="bg-[#FAFAFA] px-10">
-              <CardBody>
-                <img
-                  src="https://www.material-tailwind.com/logos/logo-spotify.svg"
-                  alt="logo"
-                  className="w-40"
-                />
-                <Typography variant="small" className="font-normal text-gray-500">
-                  spotify.com
-                </Typography>
-              </CardBody>
-            </Card>
-            <Card shadow={false} className="bg-[#FAFAFA] px-10">
-              <CardBody>
-                <img
-                  src="https://www.material-tailwind.com/logos/logo-google.svg"
-                  alt="logo"
-                  className="w-40"
-                />
-                <Typography variant="small" className="font-normal text-gray-500">
-                  google.com
-                </Typography>
-              </CardBody>
-            </Card>
+                // <Card key={data} shadow={false} className="bg-[#FAFAFA] px-10">
+                //   <CardBody>
+                //     <Image
+                //       src={data.image}
+                //       alt="logo"
+                //       width={300}
+                //       height={100}
+                //     />
+                //   </CardBody>
+                // </Card>
+              ))
+            }
           </div>
         </div>
       </div>
-      <Button className="mt-6 mx-auto flex" variant="outlined">Lihat Semua Brand</Button>
+      {/* <Button className="mt-6 mx-auto flex" variant="outlined">Lihat Semua Brand</Button> */}
     </section>
   );
 }

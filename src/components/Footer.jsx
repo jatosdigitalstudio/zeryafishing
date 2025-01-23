@@ -154,7 +154,7 @@ export default function Footer() {
                             </Link>
                         </div> */}
 
-                        <p className="mt-4 text-sm text-gray-500 sm:mt-0">&copy; 2023 Zerya Fishing. All rights reserved</p>
+                        <p className="mt-4 text-sm text-gray-500 sm:mt-0">&copy; 2025 Zerya Fishing. All rights reserved</p>
                     </div>
                 </div>
             </div>

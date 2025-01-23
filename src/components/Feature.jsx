@@ -18,7 +18,7 @@ export default function Feature() {
             icon : (<ShieldCheckIcon className="h-10 w-10 text-blue-gray-900"/>)
         },
         {
-            title: 'Terlengkap',
+            title: 'Produk',
             text :'One Stop Fishing Tackel Market, semua kelengkapan alat pancing ada disini',
             icon : (<ShieldCheckIcon className="h-10 w-10 text-blue-gray-900"/>)
         },

@@ -55,15 +55,14 @@ export default function Blogs() {
         color="blue-gray"
         className="!text-2xl !leading-snug lg:!text-3xl"
       >
-        Build something great
+        Tips dan Inspirasi Memancing
       </Typography>
       <Typography
         variant="lead"
         className="mt-2 max-w-lg !font-normal !text-gray-500"
       >
-        We&apos;re constantly trying to express ourselves and actualize our
-        dreams. If you have the opportunity to play this game of life you need
-        to appreciate every moment.
+        Tingkatkan keahlian memancing Anda dengan tips dari para ahli. Baca artikel terbaru kami 
+        tentang teknik memancing, peralatan terbaik, dan tempat memancing favorit di Indonesia.
       </Typography>
 
       <div className="mt-10 grid grid-cols-1 gap-10 lg:grid-cols-3">
