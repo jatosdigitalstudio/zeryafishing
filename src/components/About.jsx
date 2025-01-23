@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 export default function About() {
     return (
-       <section id="about" className="flex flex-col max-w-[1440px] p-10 mx-auto items-center lg:px-20 xl:max-h-[700px] lg:py-20 xl:flex-row">
+       <section id="tentang" className="flex flex-col max-w-[1440px] p-10 mx-auto items-center lg:px-20 xl:max-h-[700px] lg:py-20 xl:flex-row">
         <div className="realtive flex flex-1 flex-col xl:w-1/2 mb-4 ">
             <Typography 
                 variant="h1"

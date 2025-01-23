@@ -49,7 +49,7 @@ const contents = [
 
 export default function Blogs() {
   return (
-    <section className="container mx-auto px-8 py-10 lg:py-28">
+    <section className="container mx-auto px-8 py-10 lg:py-28" id="artikel">
       <Typography
         variant="h2"
         color="blue-gray"

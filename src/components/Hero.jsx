@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <div className="h-[85vh]">
+    <div className="h-[85vh]" id="beranda">
       <div className="relative h-full w-full ">
         <img
           src="https://www.sportfishingmag.com/uploads/2021/09/7-dsc_0038.jpg"
@@ -34,9 +34,9 @@ export default function Hero() {
                   Belanja Sekarang
                 </Link>
               </Button>
-              <Button size="md" color="black" variant="text">
+              {/* <Button size="md" color="black" variant="text">
                 Galeri
-              </Button>
+              </Button> */}
             </div>
           </div>
         </div>

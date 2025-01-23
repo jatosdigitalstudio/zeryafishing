@@ -10,7 +10,7 @@ import {
 } from "@material-tailwind/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { FaPhoneAlt } from "react-icons/fa";
-
+import Link from "next/link";
 import Image from 'next/image'
 function NavItem({ label, link}) {
   return (
@@ -25,9 +25,9 @@ function NavItem({ label, link}) {
 function NavList() {
   return (
     <ul className="mb-4 mt-2 flex flex-col gap-3 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-5">
-      <NavItem label="Beranda" link={'#Beranda'} />
-      <NavItem label="Tentang Kami" link={'#Tentang-kami'} />
-      <NavItem label="Artikel" link={'#Artikel'} />
+      <NavItem label="Beranda" link={'#beranda'} />
+      <NavItem label="Tentang Kami" link={'#tentang'} />
+      <NavItem label="Artikel" link={'#artikel'} />
       <NavItem label="Kontak" link={'#kontak'} />
     </ul>
   );
@@ -55,14 +55,16 @@ export default function Header() {
         >
           Zerya Fishing
         </Typography> */}
-        <Image src="/Logo-zerya.png" width={80} height={80}/>
+        <Link href="/">
+          <Image src="/Logo-zerya.png" width={80} height={80}/>
+        </Link>
         <div className="hidden lg:block">
           <NavList />
         </div>
         <Button color="gray" className="hidden text-sm lg:flex lg:flex-row">
           <FaPhoneAlt className="text-[18px] mr-2"/>
-          0811 2112 4404
-        </Button>
+          0813 1554 5152        
+          </Button>
         <IconButton
           size="sm"
           variant="text"
