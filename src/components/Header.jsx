@@ -56,7 +56,7 @@ export default function Header() {
           Zerya Fishing
         </Typography> */}
         <Link href="/">
-          <Image src="/Logo-zerya.png" width={80} height={80}/>
+          <Image src="/Logo-zerya.png" width={80} height={80} alt="Zerya Fishing"/>
         </Link>
         <div className="hidden lg:block">
           <NavList />

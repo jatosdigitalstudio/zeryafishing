@@ -14,7 +14,7 @@ function ContentCard({ img, title, desc }) {
       />
       <div className="absolute inset-0 bg-black/70" />
       <CardBody className="relative flex flex-col justify-end">
-        <Typography variant="h4" color="white">
+        <Typography variant="h5" color="white" className="font-bold">
           {title}
         </Typography>
         <Typography
@@ -31,19 +31,19 @@ function ContentCard({ img, title, desc }) {
 
 const contents = [
   {
-    img: "https://www.material-tailwind.com/image/blog-11.jpeg",
-    title: "Search and Discovery",
-    desc: "Website visitors today demand a frictionless user expericence — especially when using search. Because of the hight standards we tend to offer.",
+    img: "https://plus.unsplash.com/premium_photo-1726848057778-a87a90c6be3b?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    title: "Tips Membeli Alat Pancing",
+    desc: " Membeli alat pancing yang tepat adalah langkah pertama menuju pengalaman memancing yang sukses",
   },
   {
-    img: "https://www.material-tailwind.com/image/blog-10.jpeg",
-    title: "Last visits in US",
-    desc: "Wealth creation is an evolutionarily recent positive-sum game. Status is an old zero-sum game. Those attacking wealth creation are often just seeking status.",
+    img: "https://images.unsplash.com/photo-1614000403069-8b368185db9f?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    title: "Kualitas Mempengaruhi Harga",
+    desc: "Penjelasan mengapa harga dan kualitas sering berjalan seiring",
   },
   {
-    img: "https://demos.creative-tim.com/material-kit-pro/assets/img/examples/card-blog2.jpg",
-    title: "Grow in a beautiful area",
-    desc: "Free people make free choices. Free choices mean you get unequal outcomes. You can have freedom, or you can have equal outcomes. You can't have both.",
+    img: "https://images.unsplash.com/photo-1588623421822-cfe216893703?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZmlzaGluZyUyMHJvZHxlbnwwfDF8MHx8fDA%3D",
+    title: "Tips Merawat Alat Pancing",
+    desc: "Merawat alat pancing dengan baik adalah kunci agar tetap awet",
   },
 ];
 

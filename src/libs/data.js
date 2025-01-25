@@ -90,3 +90,13 @@ export const REVIEW = [
         image : "/images/testi-9.jpeg"
     },
 ]
+
+export const ARTIKEL = [
+    {
+        title:"Tips Membeli Alat Pancing",
+        text1: "Halo, Sobat Mancing! Membeli alat pancing yang tepat adalah langkah pertama menuju pengalaman memancing yang sukses. Untuk membantu Sobat memilih alat yang sesuai, berikut beberapa tips yang wajib diketahui:",
+        point: ["Kenali Jenis Memancing yang Sobat Lakukan Setiap lokasi memancing memiliki kebutuhan yang berbeda. Misalnya, memancing di laut membutuhkan joran dan reel yang lebih kuat dibandingkan memancing di danau atau sungai.", 
+            "Perhatikan Material Alat Pancing Sobat Mancing, pilihlah alat yang terbuat dari material berkualitas seperti karbon atau fiberglass. Bahan ini dikenal kuat, tahan lama, dan ringan saat digunakan."
+         ]
+    }
+]

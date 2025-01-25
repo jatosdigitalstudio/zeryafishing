@@ -66,7 +66,7 @@ export default function Review() {
 
         <Slider {...settings} className="mt-8">
             {REVIEW.map((banner)=>(
-                <img key={banner.key} src={banner.image} className="rounded-lg lg:px-12"/>
+                <img key={banner.key} src={banner.image} className="rounded-lg lg:px-12" alt="Review Zerya Fishing"/>
             ))}
         </Slider>
         

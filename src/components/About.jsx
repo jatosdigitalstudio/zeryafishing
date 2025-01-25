@@ -19,7 +19,7 @@ export default function About() {
             </Typography> 
         </div>
         <div className="relative flex flex-col my-4 xl:w-1/2 items-center lg:items-end justify-center">
-            <Image src="/About-img.jpg" width={500} height={500} className="rounded-xl"/>
+            <Image src="/About-img.jpg" width={500} height={500} className="rounded-xl" alt="Zerya Fishing"/>
         </div>
        </section>
     )
